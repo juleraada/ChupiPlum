@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Chupi Plum vuelve en 2027. Scrollear nunca fue tan divertido. Caos, color y mucho sabor." />
+  <title>Chupi Plum — Scrollear Nunca Fue Tan Divertido</title>
+
+  <!-- Google Fonts: display agresivo + body legible -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Boogaloo&family=Space+Grotesk:wght@400;700&family=Permanent+Marker&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ==================== CURSOR CUSTOM ==================== -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <!-- ==================== NOISE OVERLAY ==================== -->
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav class="navbar" id="navbar" aria-label="Navegación principal">
+    <div class="nav-logo">
+      <span class="logo-text">CHUPI<span class="logo-accent">PLUM</span></span>
+      <span class="logo-blob" aria-hidden="true">💥</span>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks" role="list">
+      <li><a href="#comeback" class="nav-link">El Regreso</a></li>
+      <li><a href="#why" class="nav-link">¿Por Qué?</a></li>
+      <li><a href="#universe" class="nav-link">Universo</a></li>
+      <li><a href="#benefits" class="nav-link">Beneficios</a></li>
+      <li><a href="#gallery" class="nav-link">Galería</a></li>
+      <li><a href="#buy" class="nav-link nav-cta">¡CONSÍGUELO!</a></li>
+    </ul>
+  </nav>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero" id="hero" aria-label="Hero principal">
+
+    <!-- Partículas flotantes decorativas -->
+    <div class="hero-particles" aria-hidden="true">
+      <div class="particle p1">🍭</div>
+      <div class="particle p2">⭐</div>
+      <div class="particle p3">💥</div>
+      <div class="particle p4">🍭</div>
+      <div class="particle p5">✨</div>
+      <div class="particle p6">🌀</div>
+      <div class="particle p7">💫</div>
+      <div class="particle p8">🍭</div>
+    </div>
+
+    <!-- Salpicaduras SVG de fondo -->
+    <div class="splatter splatter-1" aria-hidden="true"></div>
+    <div class="splatter splatter-2" aria-hidden="true"></div>
+    <div class="splatter splatter-3" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <div class="hero-eyebrow reveal-up">
+        <span class="tag-pill">2027 • DE VUELTA Y MÁS CAÓTICO</span>
+      </div>
+
+      <h1 class="hero-title reveal-up" data-delay="0.1">
+        <span class="title-line white-text">SCROLLEAR</span>
+        <span class="title-line white-text">NUNCA FUE</span>
+        <span class="title-line yellow-stroke">TAN</span>
+        <span class="title-line pink-fill">DIVERTIDO</span>
+      </h1>
+
+      <p class="hero-sub reveal-up" data-delay="0.3">
+        ¡Chupi Plum regresa con más caos, más color y más sabor que nunca!<br/>
+        La paleta que te quitaron está de vuelta. Y no viene sola.
+      </p>
+
+      <div class="hero-actions reveal-up" data-delay="0.4">
+        <a href="#universe" class="btn btn-primary">
+          <span>CONOCE EL UNIVERSO</span>
+          <span class="btn-blob" aria-hidden="true"></span>
+        </a>
+        <a href="#buy" class="btn btn-ghost">¿DÓNDE COMPRAR?</a>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="scroll-indicator reveal-up" data-delay="0.6" aria-hidden="true">
+        <span class="scroll-text">SCROLLEA PA'BAJO</span>
+        <div class="scroll-arrow">↓</div>
+      </div>
+    </div>
+
+    <!-- Mascota hero decorativa (CSS art) -->
+    <div class="hero-mascot" aria-hidden="true">
+      <div class="mascot-blob">
+        <div class="mascot-eye eye-left"></div>
+        <div class="mascot-eye eye-right"></div>
+        <div class="mascot-mouth"></div>
+        <div class="mascot-spike s1"></div>
+        <div class="mascot-spike s2"></div>
+        <div class="mascot-spike s3"></div>
+        <div class="mascot-spike s4"></div>
+        <div class="mascot-spike s5"></div>
+        <div class="mascot-spike s6"></div>
+        <div class="lollipop-hero"></div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ==================== TICKER TAPE ==================== -->
+  <div class="ticker-wrapper" aria-hidden="true">
+    <div class="ticker-track">
+      <span>💥 SCROLLEAR NUNCA FUE TAN DIVERTIDO</span>
+      <span>🍭 CHUPI PLUM VUELVE EN 2027</span>
+      <span>⭐ CAOS · COLOR · SABOR</span>
+      <span>💥 SCROLLEAR NUNCA FUE TAN DIVERTIDO</span>
+      <span>🍭 CHUPI PLUM VUELVE EN 2027</span>
+      <span>⭐ CAOS · COLOR · SABOR</span>
+      <span>💥 SCROLLEAR NUNCA FUE TAN DIVERTIDO</span>
+      <span>🍭 CHUPI PLUM VUELVE EN 2027</span>
+      <span>⭐ CAOS · COLOR · SABOR</span>
+    </div>
+  </div>
+
+  <!-- ==================== COMEBACK ==================== -->
+  <section class="comeback section-pad" id="comeback" aria-labelledby="comeback-title">
+    <div class="container">
+      <div class="comeback-grid">
+
+        <div class="comeback-text reveal-left">
+          <div class="section-tag">EL REGRESO</div>
+          <h2 id="comeback-title" class="section-title">
+            LO QUE<br/>
+            <span class="yellow-stroke">DESAPARECIÓ</span><br/>
+            HA VUELTO.
+          </h2>
+          <p class="body-text">
+            En 2012 desapareciste del mapa. Pero nunca de la memoria.
+            Chupi Plum fue más que una paleta — fue un universo entero.
+            Un sabor con personalidad propia, criaturas caóticas y colores
+            que ni tu mente podía aguantar.
+          </p>
+          <p class="body-text">
+            2027 es el año del regreso. Y esta vez llegamos con todo:
+            redes sociales, merch, drops sorpresa y un universo que
+            va a hacer explotar tu feed.
+          </p>
+          <div class="stat-row">
+            <div class="stat-item">
+              <span class="stat-num">15<span class="stat-plus">+</span></span>
+              <span class="stat-label">años de ausencia</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true">|</div>
+            <div class="stat-item">
+              <span class="stat-num">∞</span>
+              <span class="stat-label">nostalgia acumulada</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true">|</div>
+            <div class="stat-item">
+              <span class="stat-num">1</span>
+              <span class="stat-label">comeback brutal</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="comeback-visual reveal-right" aria-hidden="true">
+          <div class="year-display">
+            <span class="year-old">2012</span>
+            <span class="year-arrow">→</span>
+            <span class="year-new">2027</span>
+          </div>
+          <div class="comeback-card">
+            <div class="card-splat"></div>
+            <p class="card-quote">"La paleta que se fue<br/>y prometió volver."</p>
+            <div class="card-tags">
+              <span class="ctag">#NostalgiaDigital</span>
+              <span class="ctag">#ChupiplumVuelve</span>
+              <span class="ctag">#Caos2027</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== WHY CHUPI PLUM ==================== -->
+  <section class="why section-pad" id="why" aria-labelledby="why-title">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-tag">¿POR QUÉ CHUPI PLUM?</div>
+        <h2 id="why-title" class="section-title centered">
+          PORQUE EL<br/><span class="pink-fill">SCROLLING</span><br/>YA ABURRE.
+        </h2>
+        <p class="body-text centered-text">
+          Pasas horas viendo contenido que no te dice nada.
+          Chupi Plum te da algo real: sabor, caos y una razón para parar de hacer swipe.
+        </p>
+      </div>
+
+      <div class="why-grid">
+
+        <article class="why-card reveal-up" data-delay="0">
+          <div class="why-icon" aria-hidden="true">💥</div>
+          <h3 class="why-card-title">CAOS PURO</h3>
+          <p>No somos una paleta más. Somos una explosión de sabor con identidad propia. Cada mordida es un evento.</p>
+        </article>
+
+        <article class="why-card reveal-up" data-delay="0.1">
+          <div class="why-icon" aria-hidden="true">🌈</div>
+          <h3 class="why-card-title">UNIVERSO PROPIO</h3>
+          <p>Cada sabor tiene su criatura, su historia y su actitud. No compras una paleta. Entras a un universo.</p>
+        </article>
+
+        <article class="why-card reveal-up" data-delay="0.2">
+          <div class="why-icon" aria-hidden="true">🔥</div>
+          <h3 class="why-card-title">HECHO PA' VIRAL</h3>
+          <p>Diseñado para el feed. Colores que explotan en cámara. Personajes que se vuelven stickers y memes.</p>
+        </article>
+
+        <article class="why-card reveal-up" data-delay="0.3">
+          <div class="why-icon" aria-hidden="true">🍭</div>
+          <h3 class="why-card-title">SABORES ATREVIDOS</h3>
+          <p>Combinaciones que no tienen miedo. Sabores que te sorprenden, te asustan y luego te piden más.</p>
+        </article>
+
+        <article class="why-card reveal-up" data-delay="0.4">
+          <div class="why-icon" aria-hidden="true">⭐</div>
+          <h3 class="why-card-title">NOSTALGIA 2.0</h3>
+          <p>Si ya te amamos en los 2000, bienvenido de vuelta. Si eres nuevo, prepárate para entender por qué te lo perdiste.</p>
+        </article>
+
+        <article class="why-card reveal-up" data-delay="0.5">
+          <div class="why-icon" aria-hidden="true">💧</div>
+          <h3 class="why-card-title">HIGIENE TOTAL</h3>
+          <p>Envasado individualmente. Sin manos ajenas. Solo tú, tu Chupi Plum y tu momento más divertido.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== UNIVERSO CHUPI PLUM ==================== -->
+  <section class="universe section-pad" id="universe" aria-labelledby="universe-title">
+    <div class="universe-bg-text" aria-hidden="true">CAOS</div>
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-tag">UNIVERSO CHUPI PLUM</div>
+        <h2 id="universe-title" class="section-title centered">
+          CONOCE A LAS<br/><span class="yellow-stroke">CRIATURAS</span>
+        </h2>
+        <p class="body-text centered-text">
+          No son personajes. Son fuerzas de la naturaleza con sabor a paleta.
+        </p>
+      </div>
+
+      <div class="characters-grid">
+
+        <!-- Personaje 1: SPLATZ -->
+        <article class="char-card reveal-up" data-delay="0" aria-label="Personaje Splatz">
+          <div class="char-visual char-pink">
+            <div class="char-blob">
+              <div class="char-eye ce-l"></div>
+              <div class="char-eye ce-r ce-wild"></div>
+              <div class="char-mouth cm-big"></div>
+              <div class="char-spike cs1"></div>
+              <div class="char-spike cs2"></div>
+              <div class="char-spike cs3"></div>
+              <div class="char-lollipop"></div>
+            </div>
+          </div>
+          <div class="char-info">
+            <div class="char-name">SPLATZ</div>
+            <div class="char-flavor">🍇 MORA EXPLOSIVA</div>
+            <p class="char-desc">El más caótico del grupo. Aparece sin avisar, explota en tu boca y deja todo manchado. Sin remordimientos.</p>
+            <div class="char-attitude">ACTITUD: TOTAL CAOS 💥</div>
+          </div>
+        </article>
+
+        <!-- Personaje 2: ZARPAZ -->
+        <article class="char-card reveal-up" data-delay="0.15" aria-label="Personaje Zarpaz">
+          <div class="char-visual char-yellow">
+            <div class="char-blob char-blob-y">
+              <div class="char-eye ce-l ce-yellow"></div>
+              <div class="char-eye ce-r ce-yellow"></div>
+              <div class="char-mouth cm-grin"></div>
+              <div class="char-spike cs1 csy"></div>
+              <div class="char-spike cs2 csy"></div>
+              <div class="char-spike cs4 csy"></div>
+              <div class="char-lollipop lp-y"></div>
+            </div>
+          </div>
+          <div class="char-info">
+            <div class="char-name char-name-y">ZARPAZ</div>
+            <div class="char-flavor">🍋 LIMÓN ÁCIDO NUCLEAR</div>
+            <p class="char-desc">Agrio. Eléctrico. Te hace hacer esa cara. Le encanta. Se ríe de tus lágrimas y te da más.</p>
+            <div class="char-attitude char-att-y">ACTITUD: PROVOCADOR ⚡</div>
+          </div>
+        </article>
+
+        <!-- Personaje 3: FRENZZ -->
+        <article class="char-card reveal-up" data-delay="0.3" aria-label="Personaje Frenzz">
+          <div class="char-visual char-purple">
+            <div class="char-blob char-blob-p">
+              <div class="char-eye ce-l ce-purple"></div>
+              <div class="char-eye ce-r ce-purple ce-wild"></div>
+              <div class="char-mouth cm-scream"></div>
+              <div class="char-spike cs1 csp"></div>
+              <div class="char-spike cs3 csp"></div>
+              <div class="char-spike cs5 csp"></div>
+              <div class="char-lollipop lp-p"></div>
+            </div>
+          </div>
+          <div class="char-info">
+            <div class="char-name char-name-p">FRENZZ</div>
+            <div class="char-flavor">🍓 FRESA SALVAJE</div>
+            <p class="char-desc">Grita. Siempre. Su energía es imposible de controlar y por eso nadie quiere hacerlo. El favorito en TikTok.</p>
+            <div class="char-attitude char-att-p">ACTITUD: IMPARABLE 🌀</div>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="universe-cta reveal-up">
+        <p class="universe-cta-text">¿Con cuál te identificas? Próximamente más criaturas…</p>
+        <a href="#newsletter" class="btn btn-primary">AVÍSAME PRIMERO</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== BENEFICIOS ==================== -->
+  <section class="benefits section-pad" id="benefits" aria-labelledby="benefits-title">
+    <div class="container">
+      <div class="benefits-inner">
+        <div class="benefits-text reveal-left">
+          <div class="section-tag">BENEFICIOS</div>
+          <h2 id="benefits-title" class="section-title">
+            MÁS QUE<br/>UNA<br/><span class="pink-fill">PALETA.</span>
+          </h2>
+          <ul class="benefits-list" role="list">
+            <li class="benefit-item reveal-up" data-delay="0.1">
+              <span class="bi-icon" aria-hidden="true">💧</span>
+              <div>
+                <strong>Envasado higiénico individual</strong>
+                <p>Cada paleta protegida. Sin manos extrañas. Solo tuya.</p>
+              </div>
+            </li>
+            <li class="benefit-item reveal-up" data-delay="0.2">
+              <span class="bi-icon" aria-hidden="true">🌈</span>
+              <div>
+                <strong>Colores naturales intensos</strong>
+                <p>Tan vibrantes que parece que mienten. No mienten.</p>
+              </div>
+            </li>
+            <li class="benefit-item reveal-up" data-delay="0.3">
+              <span class="bi-icon" aria-hidden="true">💥</span>
+              <div>
+                <strong>Sabores inesperados</strong>
+                <p>Combinaciones que nadie se atrevió antes. Nosotros sí.</p>
+              </div>
+            </li>
+            <li class="benefit-item reveal-up" data-delay="0.4">
+              <span class="bi-icon" aria-hidden="true">📱</span>
+              <div>
+                <strong>100% hecho para tu feed</strong>
+                <p>Diseñado para que tus fotos exploten en likes.</p>
+              </div>
+            </li>
+            <li class="benefit-item reveal-up" data-delay="0.5">
+              <span class="bi-icon" aria-hidden="true">🏆</span>
+              <div>
+                <strong>El original que copian todos</strong>
+                <p>Chupi Plum fue primero. Y vuelve siendo el mejor.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="benefits-visual reveal-right" aria-hidden="true">
+          <div class="product-showcase">
+            <div class="product-glow"></div>
+            <div class="product-card">
+              <div class="product-lollipop-big">
+                <div class="pop-head">
+                  <div class="pop-swirl"></div>
+                </div>
+                <div class="pop-stick"></div>
+              </div>
+              <div class="product-badge">NUEVO 2027</div>
+            </div>
+            <div class="floating-tag ft1">#CaosTotal</div>
+            <div class="floating-tag ft2">8,540 ❤️</div>
+            <div class="floating-tag ft3">¡VIRAL!</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== GALERÍA ==================== -->
+  <section class="gallery section-pad" id="gallery" aria-labelledby="gallery-title">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-tag">GALERÍA</div>
+        <h2 id="gallery-title" class="section-title centered">
+          EL <span class="yellow-stroke">CAOS</span><br/>EN IMÁGENES
+        </h2>
+      </div>
+
+      <div class="gallery-grid" role="list">
+        <div class="gallery-item gi-tall reveal-up" data-delay="0" role="listitem" aria-label="Imagen 1 galería">
+          <div class="gi-inner gi1">
+            <div class="gi-overlay">
+              <span class="gi-label">SPLATZ EN ACCIÓN</span>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item reveal-up" data-delay="0.1" role="listitem" aria-label="Imagen 2 galería">
+          <div class="gi-inner gi2">
+            <div class="gi-overlay">
+              <span class="gi-label">SABOR MORA</span>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item reveal-up" data-delay="0.2" role="listitem" aria-label="Imagen 3 galería">
+          <div class="gi-inner gi3">
+            <div class="gi-overlay">
+              <span class="gi-label">EXPLOSIÓN 2027</span>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item gi-wide reveal-up" data-delay="0.15" role="listitem" aria-label="Imagen 4 galería">
+          <div class="gi-inner gi4">
+            <div class="gi-overlay">
+              <span class="gi-label">TODO EL UNIVERSO</span>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item reveal-up" data-delay="0.25" role="listitem" aria-label="Imagen 5 galería">
+          <div class="gi-inner gi5">
+            <div class="gi-overlay">
+              <span class="gi-label">CAOS LIMÓN</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="gallery-note reveal-up">Fotos reales próximamente. Mientras tanto, sigue nuestras redes 👇</p>
+    </div>
+  </section>
+
+  <!-- ==================== DÓNDE COMPRAR ==================== -->
+  <section class="buy section-pad" id="buy" aria-labelledby="buy-title">
+    <div class="buy-glow" aria-hidden="true"></div>
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-tag">DÓNDE COMPRAR</div>
+        <h2 id="buy-title" class="section-title centered">
+          CONSIGUE TU<br/><span class="pink-fill">CHUPI PLUM</span>
+        </h2>
+        <p class="body-text centered-text">Disponible en tiendas físicas y digital desde el lanzamiento en 2027.</p>
+      </div>
+
+      <div class="buy-grid">
+        <div class="buy-card reveal-up" data-delay="0">
+          <div class="buy-icon" aria-hidden="true">🏪</div>
+          <h3>Tiendas Físicas</h3>
+          <p>Supermercados, tiendas de barrio, kioscos y puntos de venta aliados en todo el país.</p>
+          <a href="#newsletter" class="btn btn-ghost-sm">Avísame cuando llegue</a>
+        </div>
+        <div class="buy-card buy-card-featured reveal-up" data-delay="0.15">
+          <div class="buy-badge-top" aria-hidden="true">⭐ PRONTO</div>
+          <div class="buy-icon" aria-hidden="true">📦</div>
+          <h3>Tienda Online</h3>
+          <p>Packs especiales, ediciones limitadas y merch exclusivo directo a tu puerta.</p>
+          <a href="#newsletter" class="btn btn-primary">QUIERO SER EL PRIMERO</a>
+        </div>
+        <div class="buy-card reveal-up" data-delay="0.3">
+          <div class="buy-icon" aria-hidden="true">🛵</div>
+          <h3>Apps de Delivery</h3>
+          <p>Rappi, Éxito y aliados de entrega rápida. Chupi Plum en menos de 30 minutos.</p>
+          <a href="#newsletter" class="btn btn-ghost-sm">Avísame cuando llegue</a>
+        </div>
+      </div>
+
+      <!-- Mapa placeholder -->
+      <div class="store-locator reveal-up">
+        <div class="locator-inner">
+          <span class="locator-icon" aria-hidden="true">📍</span>
+          <div>
+            <strong>Localizador de tiendas</strong>
+            <p>Disponible en el lanzamiento. Encuentra el Chupi Plum más cercano.</p>
+          </div>
+          <a href="#newsletter" class="btn btn-ghost-sm">Notificarme</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== REDES SOCIALES ==================== -->
+  <section class="social section-pad" id="social" aria-labelledby="social-title">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-tag">SÍGUENOS</div>
+        <h2 id="social-title" class="section-title centered">
+          EL CAOS ESTÁ<br/><span class="yellow-stroke">EN VIVO</span>
+        </h2>
+        <p class="body-text centered-text">El universo Chupi Plum se vive primero en redes. Únete al caos.</p>
+      </div>
+
+      <div class="social-grid">
+        <a href="#" class="social-card sc-tiktok reveal-up" data-delay="0" aria-label="TikTok de Chupi Plum">
+          <div class="sc-icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.17 8.17 0 0 0 4.77 1.52V6.73a4.85 4.85 0 0 1-1-.04z"/></svg>
+          </div>
+          <div class="sc-info">
+            <span class="sc-name">TikTok</span>
+            <span class="sc-handle">@ChupipLum</span>
+            <span class="sc-desc">Drops, retos y caos en video</span>
+          </div>
+          <span class="sc-arrow" aria-hidden="true">→</span>
+        </a>
+
+        <a href="#" class="social-card sc-instagram reveal-up" data-delay="0.1" aria-label="Instagram de Chupi Plum">
+          <div class="sc-icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </div>
+          <div class="sc-info">
+            <span class="sc-name">Instagram</span>
+            <span class="sc-handle">@ChupipLum</span>
+            <span class="sc-desc">Universo visual, reels y más</span>
+          </div>
+          <span class="sc-arrow" aria-hidden="true">→</span>
+        </a>
+
+        <a href="#" class="social-card sc-youtube reveal-up" data-delay="0.2" aria-label="YouTube de Chupi Plum">
+          <div class="sc-icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </div>
+          <div class="sc-info">
+            <span class="sc-name">YouTube Shorts</span>
+            <span class="sc-handle">Chupi Plum Oficial</span>
+            <span class="sc-desc">Contenido largo y exclusivo</span>
+          </div>
+          <span class="sc-arrow" aria-hidden="true">→</span>
+        </a>
+
+        <a href="#" class="social-card sc-threads reveal-up" data-delay="0.3" aria-label="Threads de Chupi Plum">
+          <div class="sc-icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M12.186 24h-.007c-3.581-.024-6.334-1.205-8.184-3.509C2.35 18.44 1.5 15.586 1.472 12.01v-.017c.03-3.579.879-6.43 2.525-8.482C5.845 1.205 8.6.024 12.18 0h.014c2.746.02 5.043.725 6.826 2.098 1.677 1.29 2.858 3.13 3.509 5.467l-2.04.569c-1.104-3.96-3.898-5.984-8.304-6.015-2.91.022-5.11.936-6.54 2.717C4.307 6.504 3.616 8.914 3.589 12c.027 3.086.718 5.496 2.057 7.164 1.43 1.783 3.631 2.698 6.54 2.717 2.623-.02 4.358-.631 5.8-2.045 1.647-1.613 1.618-3.593 1.09-4.798-.31-.71-.873-1.3-1.634-1.75-.192 1.352-.622 2.446-1.284 3.272-.886 1.102-2.14 1.704-3.73 1.79-1.202.065-2.361-.218-3.259-.801-1.063-.689-1.685-1.74-1.752-2.964-.065-1.19.408-2.285 1.33-3.082.88-.76 2.119-1.207 3.583-1.291a13.853 13.853 0 0 1 3.02.142c-.126-.742-.375-1.332-.74-1.811-.365-.476-.914-.842-1.688-1.108-1.135-.392-2.518-.35-3.6.112L6.72 7.505c.58-.3 1.21-.553 1.872-.766C9.75 6.421 10.98 6.24 12.11 6.27c.987.026 1.963.196 2.87.531 1.248.46 2.241 1.2 2.893 2.137.64.92 1.01 2.07 1.1 3.406.183.07.362.145.535.225 1.418.654 2.462 1.612 3.018 2.772.756 1.564.826 4.064-.72 5.577-1.897 1.857-4.075 2.635-7.62 2.682z"/></svg>
+          </div>
+          <div class="sc-info">
+            <span class="sc-name">Threads</span>
+            <span class="sc-handle">@ChupipLum</span>
+            <span class="sc-desc">El caos en texto puro</span>
+          </div>
+          <span class="sc-arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== NEWSLETTER ==================== -->
+  <section class="newsletter section-pad" id="newsletter" aria-labelledby="newsletter-title">
+    <div class="nl-bg" aria-hidden="true">
+      <div class="nl-blob nl-b1"></div>
+      <div class="nl-blob nl-b2"></div>
+    </div>
+    <div class="container">
+      <div class="nl-inner reveal-up">
+        <div class="section-tag">ÚNETE AL CAOS</div>
+        <h2 id="newsletter-title" class="section-title centered">
+          SÉ EL<br/><span class="yellow-stroke">PRIMERO</span><br/>EN SABERLO
+        </h2>
+        <p class="body-text centered-text">
+          Lanzamiento 2027. Drops exclusivos. Merch limitado.
+          Tú primero. Los demás después.
+        </p>
+
+        <form class="nl-form" id="nlForm" novalidate aria-label="Formulario de newsletter">
+          <div class="nl-fields">
+            <div class="nl-field">
+              <label for="nlName" class="sr-only">Tu nombre</label>
+              <input
+                type="text"
+                id="nlName"
+                name="name"
+                placeholder="Tu nombre..."
+                autocomplete="given-name"
+                required
+                aria-required="true"
+              />
+            </div>
+            <div class="nl-field">
+              <label for="nlEmail" class="sr-only">Tu email</label>
+              <input
+                type="email"
+                id="nlEmail"
+                name="email"
+                placeholder="Tu mejor email..."
+                autocomplete="email"
+                required
+                aria-required="true"
+              />
+            </div>
+            <button type="submit" class="btn btn-primary nl-btn">
+              <span class="btn-text">¡APÚNTAME AL CAOS!</span>
+              <span class="btn-blob" aria-hidden="true"></span>
+            </button>
+          </div>
+          <p class="nl-disclaimer">Sin spam. Solo caos controlado. Puedes salirte cuando quieras.</p>
+          <div class="nl-success" id="nlSuccess" role="alert" aria-live="polite" hidden>
+            ¡Bienvenido al universo Chupi Plum! 💥 Te avisamos primero.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-ticker" aria-hidden="true">
+      <div class="ticker-track ticker-slow">
+        <span>CHUPI PLUM 2027</span>
+        <span>💥</span>
+        <span>SCROLLEAR NUNCA FUE TAN DIVERTIDO</span>
+        <span>🍭</span>
+        <span>CAOS · COLOR · SABOR</span>
+        <span>⭐</span>
+        <span>CHUPI PLUM 2027</span>
+        <span>💥</span>
+        <span>SCROLLEAR NUNCA FUE TAN DIVERTIDO</span>
+        <span>🍭</span>
+        <span>CAOS · COLOR · SABOR</span>
+        <span>⭐</span>
+      </div>
+    </div>
+
+    <div class="footer-main">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="footer-logo">CHUPI<span class="logo-accent">PLUM</span></div>
+            <p class="footer-tagline">¡Caos, Color y Mucho Sabor!</p>
+            <p class="footer-copy">Una marca de <strong>Quala</strong>. Regresando en 2027.</p>
+          </div>
+
+          <nav class="footer-nav" aria-label="Navegación del footer">
+            <h4 class="footer-nav-title">NAVEGACIÓN</h4>
+            <ul role="list">
+              <li><a href="#comeback">El Regreso</a></li>
+              <li><a href="#why">¿Por Qué Chupi Plum?</a></li>
+              <li><a href="#universe">Universo</a></li>
+              <li><a href="#benefits">Beneficios</a></li>
+              <li><a href="#buy">Dónde Comprar</a></li>
+            </ul>
+          </nav>
+
+          <nav class="footer-nav" aria-label="Redes sociales en el footer">
+            <h4 class="footer-nav-title">SÍGUENOS</h4>
+            <ul role="list">
+              <li><a href="#">TikTok</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">YouTube Shorts</a></li>
+              <li><a href="#">Threads</a></li>
+            </ul>
+          </nav>
+
+          <div class="footer-legal-col">
+            <h4 class="footer-nav-title">LEGAL</h4>
+            <ul role="list">
+              <li><a href="#">Términos y condiciones</a></li>
+              <li><a href="#">Política de privacidad</a></li>
+              <li><a href="#">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2027 Chupi Plum · Quala · Todos los derechos reservados</p>
+          <p class="footer-made">Made with 💥 & mucho caos · Estrategia digital: Julian, Javier, Richard & Daniela</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Volver al inicio">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
