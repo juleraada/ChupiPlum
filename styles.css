@@ -2164,7 +2164,7 @@ body:has(button:hover) .cursor {
 .footer-logo-img {
   height: 60px;
   width: auto;
-  filter: brightness(0) invert(1) sepia(1) saturate(3) hue-rotate(10deg);
+  filter: grayscale(20%) brightness(0.9);
 }
 
 /* Characters grid — 4 cols on large screens */
@@ -2176,7 +2176,7 @@ body:has(button:hover) .cursor {
 
 /* ===== FAREWELL SECTION ===== */
 .farewell {
-  background: var(--yellow, #FFE600);
+  background: #ffff33;
   overflow: hidden;
   position: relative;
 }
