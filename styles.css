@@ -2101,3 +2101,75 @@ body:has(button:hover) .cursor {
 [data-delay="0.4"] { transition-delay: 0.4s; }
 [data-delay="0.5"] { transition-delay: 0.5s; }
 [data-delay="0.6"] { transition-delay: 0.6s; }
+
+/* ===== REAL IMAGES OVERRIDES ===== */
+
+/* Navbar logo */
+.nav-logo-img {
+  height: 44px;
+  width: auto;
+  filter: brightness(0) invert(1); /* white on dark bg - but logo is yellow on black, so keep original */
+  filter: none;
+  image-rendering: crisp-edges;
+}
+
+/* Hero banner image */
+.hero-banner-img {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+  filter: drop-shadow(0 0 40px rgba(255, 20, 147, 0.7)) drop-shadow(0 0 80px rgba(255, 0, 100, 0.4));
+  animation: mascot-float 3s ease-in-out infinite;
+}
+
+/* Character images */
+.char-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.char-card:hover .char-img {
+  transform: scale(1.08) rotate(-2deg);
+}
+
+/* Blue/purple card for SPLATZ */
+.char-visual.char-blue {
+  background: linear-gradient(135deg, #3a1a6e 0%, #6b35d5 50%, #1a3a7a 100%);
+}
+
+/* Orange card for ZARPAZ */
+.char-visual.char-orange {
+  background: linear-gradient(135deg, #2a1a00 0%, #c75a00 50%, #5a8a00 100%);
+}
+
+/* Purple/red card for FRENZZ */
+.char-visual.char-purple {
+  background: linear-gradient(135deg, #1a0a2e 0%, #6b0a5e 50%, #1a4a1a 100%);
+}
+
+/* Pink card for FLUZZ */
+.char-visual.char-pink2 {
+  background: linear-gradient(135deg, #3a0a1a 0%, #c41a5a 50%, #8a0a3a 100%);
+}
+
+.char-name-pk { color: #ff69b4; text-shadow: 2px 2px 0 #c41a5a; }
+.char-att-pk { color: #ff69b4; border-color: #ff69b4; }
+
+/* Footer logo */
+.footer-logo-img {
+  height: 60px;
+  width: auto;
+  filter: brightness(0) invert(1) sepia(1) saturate(3) hue-rotate(10deg);
+}
+
+/* Characters grid — 4 cols on large screens */
+@media (min-width: 1100px) {
+  .characters-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
