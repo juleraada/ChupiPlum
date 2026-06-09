@@ -2176,7 +2176,7 @@ body:has(button:hover) .cursor {
 
 /* ===== FAREWELL SECTION ===== */
 .farewell {
-  background: #ffff33;
+  background: #ffff00;
   overflow: hidden;
   position: relative;
 }
