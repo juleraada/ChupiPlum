@@ -2173,3 +2173,72 @@ body:has(button:hover) .cursor {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
+/* ===== FAREWELL SECTION ===== */
+.farewell {
+  background: var(--yellow, #FFE600);
+  overflow: hidden;
+  position: relative;
+}
+
+.farewell-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  min-height: 600px;
+}
+
+.farewell-text {
+  padding: 4rem 3rem 4rem 4rem;
+}
+
+.farewell-text .section-tag {
+  color: #000;
+  border-color: #000;
+}
+
+.farewell-text .section-title {
+  color: #000;
+}
+
+.farewell-text .yellow-stroke {
+  -webkit-text-stroke: 3px #000;
+  color: transparent;
+}
+
+.farewell-text .body-text {
+  color: #111;
+}
+
+.farewell-img-wrap {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 100%;
+  min-height: 600px;
+  overflow: hidden;
+}
+
+.farewell-img {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  object-position: top center;
+}
+
+@media (max-width: 768px) {
+  .farewell-inner {
+    grid-template-columns: 1fr;
+  }
+  .farewell-text {
+    padding: 3rem 1.5rem 1.5rem;
+    text-align: center;
+  }
+  .farewell-img-wrap {
+    min-height: 400px;
+  }
+}
